@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c3cfe2;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  width: 50px;
+  height: 50px;
+  background: #e17b77;
+  margin: 10px 0;
+  border-radius: 1px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+ul li .fa-solid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+ul li .fa-brands {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+ul li.blog {
+  background-color: #e17b77;
+}
+
+ul li.twitter {
+  background-color: #00aced;
+}
+
+ul li.linkedin {
+  background-color: #007bb6;
+}
+
+ul li.facebook {
+  background-color: #3b5998;
+}
+
+ul li.github {
+  background-color: #333;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  right: 51px;
+  width: 0px;
+  height: 50px;
+  background: #eebb5c;
+  text-align: center;
+  text-decoration: underline;
+  line-height: 50px;
+  border-radius: 1px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.5s 0.2s ease;
+}
+
+.slider p {
+  font-size: 16px;
+  font-weight: 800;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+ul li.blog div.slider {
+  background: #e17b77;
+}
+ul li.twitter div.slider {
+  background: #00aced;
+}
+ul li.linkedin div.slider {
+  background: #007bb6;
+}
+ul li.facebook div.slider {
+  background: #3b5998;
+}
+ul li.github div.slider {
+  background: #333;
+}
+
+ul li:hover .slider {
+  width: 220px;
+  transition: all 0.5s ease;
+}
+
+ul li:hover .slider p {
+  opacity: 1;
+  transition: all 1s 0.2s ease;
+}

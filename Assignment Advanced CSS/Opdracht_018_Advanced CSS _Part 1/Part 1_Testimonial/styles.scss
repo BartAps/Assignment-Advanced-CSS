@@ -1,0 +1,46 @@
+@import "./constants";
+
+.body {
+  background-color: #c3cfe2;
+}
+
+.headerbox {
+  @include primarystyle;
+  border-radius: 25px;
+  box-shadow: 5px 10px 18px #888888;
+  #header {
+    font-family: $mainfontfam;
+    color: rgb(105, 102, 102);
+    font-size: 1.6rem;
+    font-weight: 500px;
+    padding: 1em;
+    text-align: left;
+    line-height: 1.8em;
+    margin-bottom: 0.8em;
+  }
+  .hero-img {
+    width: 8em;
+    height: 8em;
+    border-radius: 100% 100% 100% 100%;
+    border: 8px solid #fff;
+  }
+}
+
+.footer {
+  background-color: #686de0;
+  margin-top: -5em;
+  padding-bottom: 3em;
+  border-radius: 0px 0px 20px 20px;
+  .footername {
+    font-family: $mainfontfam;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-top: 4.5em;
+  }
+  .footerweb {
+    font-family: $mainfontfam;
+    color: #c3cfe2;
+    font-size: 1.2rem;
+  }
+}

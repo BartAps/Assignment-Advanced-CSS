@@ -1,0 +1,9 @@
+$mainfontfam: Arial, Helvetica, sans-serif;
+
+@mixin primarystyle() {
+  margin: 1em;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
